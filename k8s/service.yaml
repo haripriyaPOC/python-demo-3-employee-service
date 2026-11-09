@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: employee-service
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: employee-service
   ports:
