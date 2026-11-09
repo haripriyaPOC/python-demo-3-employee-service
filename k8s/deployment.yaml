@@ -5,7 +5,7 @@ metadata:
   labels:
     app: employee-service
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: employee-service
@@ -17,7 +17,7 @@ spec:
       containers:
         - name: employee-service
           # Replace with your registry/image, for example: docker.io/YOUR_DOCKERHUB_USER/employee-service:1.0.0
-          image: YOUR_REGISTRY/employee-service:1.0.0
+          image: haripriya1310/python3-backend:v1
           ports:
             - name: http
               containerPort: 8000
